@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.code-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    font-weight: bold;
+    color: lightseagreen;
+    border-bottom: 1px solid lightseagreen;
+    margin-top: 10px;
+}
+
+.code-image {
+    padding: 10px;
+    margin: 25px 0px;
+    box-shadow: 0px 0px 10px;
+}
+
+/* Input label styling */
+.input-label {
+    display: block;
+    /* elements will come one by one */
+    margin: 8px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+/* Input Box styling */
+input[type="text"] {
+    width: 100%;
+    /* Will occupy the maximum width available */
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid rgb(236, 224, 224);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* styling generate button */
+.generate-button {
+    background-color: lightskyblue;
+}
+
+/* generate button (when generation of code takes more time) */
+.generate-button:disabled {
+    background-color: rgb(190, 229, 253);
+    cursor: not-allowed;
+}
+
+.generate-button:hover {
+    background-color: rgb(63, 178, 250);
+
+}
+
+.download-button {
+    background-color: lightgreen;
+    margin-left: 20px;
+}
+
+.download-button:hover {
+    background-color: rgb(38, 243, 38);
+
+}
+
+footer {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: lightseagreen;
+}
